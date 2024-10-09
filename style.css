@@ -181,14 +181,14 @@ section {
 .socials i:hover {
     transform: scale(1.12);
 }
-
 .education-info {
     display: flex;
-    gap: 2rem;
+    flex-wrap: wrap; /* Allow items to wrap onto the next line */
+    gap: 2rem; /* Maintain spacing between cards */
 }
 
 .education-card {
-    flex: 1;
+    flex: 1 1 300px; /* Flex-grow, flex-shrink, flex-basis for responsiveness */
     padding: 2rem;
     border: 2px solid #C0C0C0; /* Silver */
     border-radius: 1rem;
@@ -470,6 +470,13 @@ footer ul li a:hover {
     }
     .grid {
         grid-template-columns: repeat(1, 1fr);
+    }
+    .education-info {
+        flex-direction: column; /* Stack cards vertically on smaller screens */
+    }
+    
+    .education-card {
+        width: 100%; /* Full width for each card */
     }
     .experience-info img {
         width: 70vw; /* Image width for mobile */
