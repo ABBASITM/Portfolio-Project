@@ -316,6 +316,10 @@ section {
     background-color: #C0C0C0; /* Button background changes on hover */
     color: #1A1A1A; /* Dark text color for better contrast */
 }
+.project-card:hover .btn-group .btn {
+    background-color: #1A1A1A; /* Maintain darker background */
+    color: #C0C0C0; /* Lighter text color for contrast */
+}
 
 .activities-info {
     display: grid;
